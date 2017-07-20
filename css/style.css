@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+}
+
+header, section, footer {
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+
+.container {
+  width: 1151px;
+  margin: 0 auto;
+}
+.row {
+  position: relative;
+}
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+
+/* HEADER */
+header {
+  background: #000;
+  padding: 10px;
+  color: #fff;
+}
+
+header .row{
+  height: 21px;
+}
+header nav.col {
+  float: right;
+}
+
+header nav.col li{
+  display: inline-block;
+  padding: 0;
+}
+
+header p.col {
+  padding: 4px 4px 4px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header nav.col a{
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 7px;
+  text-transform: uppercase;
+  margin: 0 12px;
+}
+
+/* SEKCJA FOTEL I OPIS */
+body > section:first-of-type {
+  background: linear-gradient(180deg ,#FFFFFF, #D1CDD7);
+  height: 550px;
+}
+
+body > section:first-of-type .col:nth-of-type(1){
+  width: 40%;
+}
+
+body > section:first-of-type .col:nth-of-type(2){
+  width: 60%;
+}
+
+body > section:first-of-type img{
+  width: 139%;
+  max-width: 160%;
+  margin-top: 58px;
+  margin-left: -43px;
+}
+
+body > section:first-of-type h1{
+  font-size: 44px;
+  color: #9d9c9e;
+  margin-top: 130px;
+  margin-left: 100px;
+  text-transform: uppercase;
+}
+
+body > section:first-of-type h1>span{
+  color: #5ecfbc;
+}
+
+
+body > section:first-of-type p{
+  font-size: 20px;
+  color: #979699;
+  margin-top: 29px;
+  margin-left: 43px;
+  text-align: center;
+}
+
+body > section:first-of-type a{
+  letter-spacing: -1px;
+  margin-left: 157px;
+  margin-top: 58px;
+  display: block;
+  height: 57px;
+  width: 286px;
+  font-size: 25px;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  color: #fff;
+  background: #91d4cc;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+body > section:first-of-type .row > :first-child{
+  color: #5ecfbc;
+  font-size: 77px;
+  position: absolute;
+  left: -43px;
+  top: 194px;
+}
+
+body > section:first-of-type .row > p:nth-of-type(2){
+  color: #5ecfbc;
+  font-size: 77px;
+  position: absolute;
+  right: 11px;
+  top: 194px;
+}
