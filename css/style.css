@@ -277,7 +277,11 @@ header nav.col {
 
 header nav.col li{
   display: inline-block;
-  padding: 0;
+  padding: 4px 0;
+}
+
+header nav.col li:nth-of-type(2) {
+  color: red;
 }
 
 header p.col {
@@ -286,12 +290,27 @@ header p.col {
   text-transform: uppercase;
 }
 
-header nav.col a{
+header nav.col a {
   color: #fff;
   text-decoration: none;
-  padding: 0px 7px;
   text-transform: uppercase;
-  margin: 0 12px;
+  font-weight: 700;
+}
+
+header nav.col a:first-of-type {
+  padding: 0px 7px;
+  margin: 0 13px;
+
+}
+
+header nav.col a:nth-of-type(2) {
+  padding: 0px 7px;
+  margin: 0 13px;
+}
+
+header nav.col a:nth-of-type(3) {
+  padding: 0px 7px;
+  margin: 0 13px;
 }
 
 /* SEKCJA FOTEL I OPIS */
@@ -465,6 +484,11 @@ body > section:first-of-type .row > p:nth-of-type(2){
 
 /* === CENNIK === */
 
+.borderPrice {
+  background: #f8f8f8;
+  margin-top: 55px;
+  padding-bottom: 70px;
+}
 
 .priceBoard {
   width: 33%;
@@ -474,13 +498,14 @@ body > section:first-of-type .row > p:nth-of-type(2){
 
 .borderPrice .row:first-of-type p:first-of-type {
   color: #aeaeae;
-  margin-top: 82px;
+  margin-top: 27px;
   font-size: 23px;
   text-transform: uppercase;
   border-bottom: 9px solid #80ead5;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   width: 347px;
   margin-left: -3px;
+  padding-bottom: 7px;
 }
 
 /*First board*/
@@ -819,4 +844,177 @@ body > section:first-of-type .row > p:nth-of-type(2){
   border-radius: 10px;
   background: #80ead5;
   letter-spacing: 0.5px;
+}
+
+/* Form section */
+
+.contactForm .row:first-of-type p{
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-left: 5px;
+  letter-spacing: -1px;
+  color: black;
+  border-bottom: 9px solid #80e5d0;
+  padding-bottom: 6px;
+  width: 350px;
+  margin-bottom: 27px;
+}
+
+form[name='contact']{
+  display: block;
+}
+
+form[name='contact'] input{
+  border: 1px solid #c6f4e8;
+  display: block;
+  margin-top: 20px;
+  margin-left: 3px;
+  width: 689px;
+  height: 72px;
+  font-size: 35px;
+  padding-left: 16px;
+  margin-bottom: 30px;
+}
+
+form[name='contact'] textarea {
+  border: 1px solid #c6f4e8;
+  margin-top: -4px;
+  margin-left: 3px;
+  width: 687px;
+  height: 205px;
+  resize: none;
+  padding: 11px 16px;
+  font-size: 40px;
+}
+
+form[name='contact'] ::placeholder {
+  color: #E4E4E4;
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+
+.form img:first-of-type {
+  margin-left: 80px;
+  width: 285px;
+  height: 230px;
+  margin-top: -11px;
+}
+
+.form div > img:first-child {
+  width: 45px;
+  height: 38px;
+  position: absolute;
+  left: -80px;
+  bottom: 5px;
+}
+
+.form {
+  position: relative;
+}
+
+.form div {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #c7f5e7;
+  position: absolute;
+  left: 61px;
+  top: 255px;
+}
+
+.form p {
+  color: #e3e3e3;
+  position: absolute;
+  bottom: -85px;
+  left: 127px;
+  font-size: 21px;
+  width: 300px;
+  word-spacing: 1px;
+  line-height: 23px;
+  padding: 2px 0px;
+}
+
+.form a {
+  color: white;
+  position: absolute;
+  bottom: -202px;
+  left: 60px;
+  background: #80e3cf;
+  width: 372px;
+  height: 78px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 18px;
+  font-size: 37px;
+  font-weight: 600;
+  padding-left: 24px;
+  letter-spacing: -0.5px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  border: 1px solid black;
+  position: relative;
+}
+
+footer .col:first-of-type p{
+  color: #d0d0d0;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 50px;
+  letter-spacing: 0.45px;
+}
+
+footer .col:nth-of-type(2) img:first-of-type {
+  position: absolute;
+  right: 413px;
+  top: -6px;
+  height: 40px;
+  width: 40px;
+}
+
+footer .col:nth-of-type(2) img:nth-of-type(2) {
+  position: absolute;
+  right: 372px;
+  top: -6px;
+  height: 40px;
+  width: 40px;
+}
+
+footer .col:nth-of-type(2) img:nth-of-type(3) {
+  position: absolute;
+  right: 329px;
+  top: -6px;
+  height: 40px;
+  width: 40px;
+}
+
+footer .col:nth-of-type(2) img:nth-of-type(4) {
+  position: absolute;
+  right: 287px;
+  top: -6px;
+  height: 40px;
+  width: 40px;
+}
+
+footer .col:nth-of-type(3) p {
+  position: absolute;
+  right: 65px;
+  top: 7px;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #cecece;
+}
+
+footer .col:nth-of-type(3) p > span {
+  font-weight: 800;
+  color: #AFB1B2;
 }
