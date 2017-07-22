@@ -592,7 +592,7 @@ body > section:first-of-type .row > p:nth-of-type(2){
   padding-top: 8px;
   text-transform: uppercase;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #80ead5;
   letter-spacing: 0.5px;
 }
@@ -601,7 +601,7 @@ body > section:first-of-type .row > p:nth-of-type(2){
 
 .priceBoard:nth-of-type(2) {
   width: 358px;
-  height: 540px;
+  height: 543px;
   margin-left: 34px;
   margin-top: 68px;
   background: #75DFCA;
@@ -638,16 +638,6 @@ body > section:first-of-type .row > p:nth-of-type(2){
   font-weight: 300;
 }
 
-.priceBoard:nth-of-type(2) > div:nth-of-type(3) > p {
-  color: red;
-}
-
-.priceBoard:nth-of-type(2) > div:nth-of-type(3) > p > span {
-  color: orange;
-}
-
-
-
 .priceBoard:nth-of-type(2) > div:nth-of-type(3) {
   background: #F1F1F1;
   position: absolute;
@@ -658,24 +648,175 @@ body > section:first-of-type .row > p:nth-of-type(2){
   border-radius: 50%;
 }
 
+.priceBoard:nth-of-type(2) > div:nth-of-type(3) > p {
+  color: #79e8cd;
+  font-weight: 900;
+  font-size: 48px;
+  position: absolute;
+  left: -20px;
+}
+
+.priceBoard:nth-of-type(2) > div:nth-of-type(3) > p > span {
+  color: #3adaba;
+  font-size: 22px;
+  position: absolute;
+  left: 50px;
+  font-weight: bolder;
+}
+
+.priceBoard:nth-of-type(2) > div:nth-of-type(3) > span {
+  position: absolute;
+  top: 90px;
+  right: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3adaba;
+}
+
+.priceBoard:nth-of-type(2) ul:first-of-type {
+  padding-top: 203px;
+  font-size: 27px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: -0.5px;
+  color: #cacaca;
+  width: 354px;
+  margin-left: -18px;
+}
+
+.priceBoard:nth-of-type(2) li:nth-of-type(2n+1) {
+  background: #fcfcfc;
+}
+
+.priceBoard:nth-of-type(2) li:nth-of-type(2) {
+  background: #f8f8f8;
+}
+
+.priceBoard:nth-of-type(2) a:first-of-type {
+  position: absolute;
+  left: 114px;
+  bottom: 19px;
+  width: 135px;
+  height: 37px;
+  border-radius: 9px;
+  text-align: center;
+  padding-top: 8px;
+  text-decoration: none;
+  color: #3adaba;
+  background: #fcfcfc;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
 /*Third board */
 .priceBoard:nth-of-type(3) {
-  border: 1px solid #eaeaea;
   width: 357px;
-  height: 550px;
+  height: 542px;
   margin-top: 69px;
   margin-left: 35px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 1px 0 grey;
 }
 
 .priceBoard:nth-of-type(3) > div:first-child {
-  background: red;
+  background: white;
+  margin-left: 127px;
+  width: 59px;
+  height: 60px;
+  margin-top: -42px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
 }
 
-.priceBoard:nth-of-type(3) >div:nth-of-type(2) {
-  background: green;
+.priceBoard:nth-of-type(3) > div:nth-of-type(2){
+  background: #e0e0e0;
+  margin-top: -44px;
+  margin-left: 142px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.priceBoard:nth-of-type(3) p:first-of-type {
+  color: #75dfca;
+  text-transform: uppercase;
+  margin-left: 61px;
+  margin-top: 25px;
+  font-size: 26px;
+  letter-spacing: -1px;
+  font-weight: 300;
 }
 
 .priceBoard:nth-of-type(3) > div:nth-of-type(3) {
-  background: yellow;
-  width: 200px;
+  background: white;
+  height: 138px;
+  width: 140px;
+  margin-left: 86px;
+  margin-top: 29px;
+  border-radius: 50%;
+  border: 1.5px solid #d0d0d0;
+  position: relative;
+}
+
+.priceBoard:nth-of-type(3) > div:nth-of-type(3) > p {
+  color: #dfdfdf;
+  font-size: 49px;
+  font-weight: 800;
+  margin-left: 18px;
+  padding-top: 3px;
+}
+
+.priceBoard:nth-of-type(3) > div:nth-of-type(3) > p span {
+  color: lightgrey;
+  font-size: 23px;
+  vertical-align: text-top;
+  font-weight: 500;
+  position: absolute;
+  top: 33px;
+}
+
+.priceBoard:nth-of-type(3) > div:nth-of-type(3) > span {
+  color: #e3e3e3;
+  position: relative;
+  left: 28px;
+  top: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.priceBoard:nth-of-type(3) ul:first-of-type {
+  padding-top: 37px;
+  font-size: 27px;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #cacaca;
+  width: 354px;
+  margin-left: -21px;
+}
+
+.priceBoard:nth-of-type(3) li:nth-of-type(2n+1) {
+  background: #F1F1F1;
+}
+
+.priceBoard:nth-of-type(3) li:nth-of-type(2n) {
+  background: #F8F8F8;
+}
+
+.priceBoard:nth-of-type(3) a:first-of-type {
+  text-decoration: none;
+  display: inline-block;
+  width: 133px;
+  margin-top: 28px;
+  margin-left: 94px;
+  text-align: center;
+  height: 38px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+  background: #80ead5;
+  letter-spacing: 0.5px;
 }
