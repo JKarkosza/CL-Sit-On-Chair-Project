@@ -280,8 +280,19 @@ header nav.col li{
   padding: 4px 0;
 }
 
+header nav.col li:first-of-type {
+  position: absolute;
+  right: 250px;
+}
+
 header nav.col li:nth-of-type(2) {
-  color: red;
+  position: absolute;
+  right: 126px;
+}
+
+header nav.col li:nth-of-type(3) {
+  position: absolute;
+  right: 10px;
 }
 
 header p.col {
@@ -290,27 +301,16 @@ header p.col {
   text-transform: uppercase;
 }
 
+header p.col > span {
+  color: #2fcaaf;
+  font-weight: 600;
+}
+
 header nav.col a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-header nav.col a:first-of-type {
-  padding: 0px 7px;
-  margin: 0 13px;
-
-}
-
-header nav.col a:nth-of-type(2) {
-  padding: 0px 7px;
-  margin: 0 13px;
-}
-
-header nav.col a:nth-of-type(3) {
-  padding: 0px 7px;
-  margin: 0 13px;
 }
 
 /* SEKCJA FOTEL I OPIS */
@@ -348,44 +348,56 @@ body > section:first-of-type h1>span{
 
 
 body > section:first-of-type p{
-  font-size: 20px;
-  color: #979699;
-  margin-top: 29px;
-  margin-left: 43px;
+  font-size: 17px;
+  color: #8b8a8c;
+  margin-top: 30px;
+  margin-left: 66px;
   text-align: center;
+  width: 500px;
+  letter-spacing: -0.5px;
+  padding-right: 54px;
+  padding-top: 1px;
+  line-height: 23px;
 }
 
 body > section:first-of-type a{
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
   margin-left: 157px;
-  margin-top: 58px;
+  margin-top: 32px;
   display: block;
   height: 57px;
   width: 286px;
   font-size: 25px;
   text-align: center;
-  padding: 17px;
+  padding: 16px;
   text-decoration: none;
   color: #fff;
   background: #91d4cc;
   border-radius: 10px;
   text-transform: uppercase;
+  padding-left: 33px;
 }
 
 body > section:first-of-type .row > :first-child{
   color: #5ecfbc;
   font-size: 77px;
   position: absolute;
-  left: -43px;
-  top: 194px;
+  left: 5px;
+  top: 250px;
+  margin: 0;
+  padding: 0;
+  width: 0;
 }
 
 body > section:first-of-type .row > p:nth-of-type(2){
   color: #5ecfbc;
   font-size: 77px;
   position: absolute;
-  right: 11px;
-  top: 194px;
+  right: 54px;
+  top: 248px;
+  padding: 0;
+  margin: 0;
+  width: 0px;
 }
 /* === SEKCJA Z KRZESLAMI ===*/
 
@@ -935,7 +947,7 @@ form[name='contact'] ::placeholder {
   padding: 2px 0px;
 }
 
-.form a {
+/*.form a {
   color: white;
   position: absolute;
   bottom: -202px;
@@ -952,13 +964,32 @@ form[name='contact'] ::placeholder {
   font-weight: 600;
   padding-left: 24px;
   letter-spacing: -0.5px;
+}*/
+
+input[type=submit] {
+  color: white;
+  position: absolute;
+  bottom: -202px;
+  left: 60px;
+  background: #80e3cf;
+  width: 372px;
+  height: 78px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 18px;
+  font-size: 37px;
+  font-weight: 600;
+  padding-left: 24px;
+  letter-spacing: -0.5px;
+  border:none;
 }
 
 /* Footer */
 
 footer {
   margin-top: 50px;
-  border: 1px solid black;
   position: relative;
 }
 
